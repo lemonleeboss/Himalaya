@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff4f4f4"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/search_back"
+            android:src="@drawable/activity_search"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="20dp" />
+        <EditText
+            android:id="@+id/search_input"
+            android:background="@drawable/shape_edit_text_bg"
+            android:layout_width="0dp"
+            android:textCursorDrawable="@drawable/shape_edit_text_cursor"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16sp"
+            android:hint="请输入专辑关键字"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="搜索"
+            android:id="@+id/search_btn"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/main_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.example.a76780.himalaya.views.FlowTextLayout
+        android:id="@+id/flow_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        />
+
+
+</LinearLayout>
